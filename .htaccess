@@ -14,4 +14,4 @@ ErrorDocument 404 /404.html
 
 RewriteBase /
 RewriteCond %{REQUEST_URI} !^/maintenance\.html$
-RewriteRule ^(.*)$ http://domain.com/maintenance.html [R=307,L]
+RewriteRule ^(.*)$ https://m3hedi.github.io/portfolio/maintenance.html [R=307,L]
