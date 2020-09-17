@@ -31,6 +31,25 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
 
+  <!-- EmailJS -->
+  <scripttype="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <scripttype="text/javascript">
+    (function() {
+      emailjs.init("user_IybD4KBRVt9xM93D1GHfK");
+    })();
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178241708-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178241708-1');
+  </script>
+
+
 </head>
 
 <body>
@@ -283,7 +302,7 @@
   <!  End section journal -->
 
 
-  <!-- start sectoion contact
+  <!-- start sectoion contact -->
   <div id="contact" class="paddsection">
     <div class="container">
       <div class="contact-block1">
@@ -344,7 +363,7 @@
     </div>
   </div>
 
-  <! start sectoion contact -->
+  <!-- end sectoion contact -->
 
 
   <!-- start section footer -->

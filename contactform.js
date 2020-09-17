@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
   "use strict";
 
+
   //Contact
   $('form.contactForm').submit(function() {
     var f = $(this).find('.form-group'),
@@ -103,6 +104,12 @@ jQuery(document).ready(function($) {
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
+          emailjs.sendForm('service_5x1w0p8', 'template_576wgtv', '#myForm')
+          .then(function(response) {
+             console.log('SUCCESS!', response.status, response.text);
+          }, function(error) {
+             console.log('FAILED...', error);
+          });
           $('.contactForm').find("input, textarea").val("");
         } else {
           $("#sendmessage").removeClass("show");
