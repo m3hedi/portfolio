@@ -11,3 +11,7 @@ RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
 
 ErrorDocument 404 /404.html
+
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+RewriteRule ^(.*)$ http://domain.com/maintenance.html [R=307,L]
